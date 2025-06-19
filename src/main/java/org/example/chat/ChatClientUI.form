@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="org.example.chat.ChatClientUI">
+  <grid id="27dc6" binding="root" layout-manager="GridLayoutManager" row-count="3" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="828" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <scrollpane id="3c1b3" binding="ClientChatBlock">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="32"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="f98cd" class="javax.swing.JTextArea" binding="ClientChatArea">
+            <constraints/>
+            <properties>
+              <font size="32"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <scrollpane id="4c2d9" binding="ServerChatBlock">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="32"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="5569d" class="javax.swing.JTextArea" binding="ServerChatArea">
+            <constraints/>
+            <properties>
+              <font size="32"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="7cb93" class="javax.swing.JTextField" binding="ClientInputField">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="32"/>
+        </properties>
+      </component>
+      <component id="b5a6e" class="javax.swing.JTextField" binding="ServerInputField">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font size="32"/>
+        </properties>
+      </component>
+      <component id="2a08b" class="javax.swing.JLabel" binding="Client">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Microsoft YaHei" size="48" style="1"/>
+          <text value="客人(Client)"/>
+        </properties>
+      </component>
+      <component id="85254" class="javax.swing.JLabel" binding="Server">
+        <constraints>
+          <grid row="0" column="3" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Microsoft YaHei" size="48" style="1"/>
+          <text value="酒店(Server)"/>
+        </properties>
+      </component>
+      <component id="7b401" class="javax.swing.JButton" binding="ClientSendButton">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="32"/>
+          <text value="发送"/>
+        </properties>
+      </component>
+      <component id="2e7b0" class="javax.swing.JButton" binding="ServerSendButton">
+        <constraints>
+          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="32"/>
+          <text value="发送"/>
+        </properties>
+      </component>
+      <component id="f2453" class="javax.swing.JButton" binding="ClearClientButton">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="32"/>
+          <text value="清空"/>
+        </properties>
+      </component>
+      <component id="8aecf" class="javax.swing.JButton" binding="ClearServerButton">
+        <constraints>
+          <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="32"/>
+          <text value="清空"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

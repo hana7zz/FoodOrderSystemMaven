@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.example.mybatis.UserMapper">
+
+    <insert id="insert" parameterType="org.example.User" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO food_order (room_number, food_number, date, time, price)
+        VALUES (#{roomNumber}, #{foodNumber}, #{date}, #{time}, #{price})
+    </insert>
+
+    <delete id="delete" parameterType="int">
+        DELETE FROM food_order WHERE id = #{id}
+    </delete>
+
+    <update id="update" parameterType="org.example.User">
+        UPDATE food_order
+        SET room_number = #{roomNumber},
+            food_number = #{foodNumber},
+            date = #{date},
+            time = #{time},
+            price = #{price}
+        WHERE id = #{id}
+    </update>
+
+    <select id="fetchAll" resultType="org.example.User">
+        SELECT id, room_number, food_number, date, time, price
+        FROM food_order
+    </select>
+
+</mapper>
