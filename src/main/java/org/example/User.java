@@ -3,7 +3,7 @@ package org.example;
 public class User {
     private int id; // This is the user id.
     public String roomNumber; // This is the user roomNumber.
-    public String date;
+    public String date; // This is the date.
     public String foodNumber;
     public String time;
     public String price;
