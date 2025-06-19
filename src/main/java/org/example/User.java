@@ -1,7 +1,7 @@
 package org.example;
 
 public class User {
-    private int id;
+    private int id; // This is the user id.
     public String roomNumber;
     public String date;
     public String foodNumber;
